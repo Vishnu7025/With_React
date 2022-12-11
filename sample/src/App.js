@@ -1,5 +1,6 @@
 function App() {
   let set = 1;
+   set (2)
   let count = 0;
   return (
     <div> 
