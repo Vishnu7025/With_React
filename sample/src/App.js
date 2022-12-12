@@ -1,10 +1,19 @@
+import {useState} from 'react'
 function App() {
-  let set = 1;
-   set (2)
-  let count = 0;
+  const [count,setCount] = useState(0)
+  const addCount = () => {
+    setCount(count+1) 
+  } 
+  const minusCount = () => {
+    setCount(count-1)
+  }
   return (
     <div> 
-    <button>ADD</button>
+    <button onClick={addCount}>ADD</button>
+    <br></br>
+      <br></br>
+    <button onClick={minusCount}>minus</button>
+      <h1>Counter: {count}</h1>
       <h1>Counter: {count}</h1>
     </div>
   );
