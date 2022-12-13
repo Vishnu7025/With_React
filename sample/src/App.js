@@ -16,6 +16,7 @@ function App() {
       <h1>Counter: {count}</h1>
       <h1>Counter: {count}</h1>
       <h1>Counter: {count}</h1>
+      <h1>vichu</h1>
     </div>
   );
 }
