@@ -15,6 +15,7 @@ function App() {
     <button onClick={minusCount}>minus</button>
       <h1>Counter: {count}</h1>
       <h1>Counter: {count}</h1>
+      <h1>Counter: {count}</h1>
     </div>
   );
 }
