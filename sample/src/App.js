@@ -1,27 +1,12 @@
 import {useState} from 'react'
+import Counter from './Counter'
 function App() {
-  const [count,setCount] = useState(0)
-  const addCount = () => {
-    setCount(count+1) 
-  } 
-  const minusCount = () => {
-    setCount(count-1)
-  }
+    const [state,setState]=useState(false)
   return (
     <div> 
-    <button onClick={addCount}>ADD</button>
-    <br></br>
-      <br></br>
-    <button onClick={minusCount}>minus</button>
-      <h1>Counter: {count}</h1>
-      <h1>Counter: {count}</h1>
-      <h1>Counter: {count}</h1>
-      <h1>vichu</h1>
-      <h2>hello</h2>
-      <button >heloo</button>
-      <h4>
-        skdjflk
-      </h4>
+   
+      <h1 onClick={()=>setState(!state)}>Show/Hide</h1>
+    { state && <Counter/> }
     </div>
   );
 }
