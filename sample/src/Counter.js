@@ -13,7 +13,7 @@ function Counter() {
     return (
         <div>
             <button onClick={() => setCount(count + 1)} >Increment</button>
-            <h1>Heloo iam component:{count}</h1>
+            <h1>Heloo iam components:{count}</h1>
         </div>
     )
 }
